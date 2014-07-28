@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8" />
+        <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+            <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+                <META HTTP-EQUIV="Expires" CONTENT="0">
+                    <title>tagselect - 设置标签</title>
+                    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+                        <link rel="stylesheet" href="css/frame.css" />
+                        <link rel="stylesheet" href="css/framework.css" />
+                        <link rel="stylesheet" href="css/public.css" />
+                        <link rel="stylesheet" href="css/listBlog.css" />
+                        <link rel="stylesheet" href="css/register.css" />
+                        <link rel="stylesheet" href="./tagselect.css" />
+                        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+                        <script type="text/javascript" src="./tagselect.min.js"></script>
+                        
+    </head>
+    <body>
+        <jsp:include page="registerHeader.jsp"></jsp:include>
+            <div class="maincontent">
+                <div class="content" style='width: 600px;margin: 0 auto;border: 1px solid #ddd;padding-bottom: 20px;'>
+                    <div class='tagbox'>
+                        <script>
+                            $('.tagbox').createSelectTagBox({title:'告诉我们您兴趣领域吧',definedTags:'百读 伯乐 阿三',tags:'垃圾 小萝莉 奥特曼 那笔小新 神笔马里 老大不小 东拉西扯 恶语相加 老挝 王老吉 加多边'});
+                        </script>
+                    </div>
+                    <div class='submit' style='margin:0 auto;text-align: center;'>
+                        <button class='login-button' onclick='window.open("http://service.weibo.com/share/share.php?url=http%3A%2F%2Fopen.weibo.com%2Fsharebutton&type=button&language=zh_cn&appkey=Y9hYA&searchPic=true&style=number","_blank","toolbar=yes, location=yes, directories=no, status=no, menubar=yes, scrollbars=yes, resizable=no, copyhistory=yes, width=800, height=600")';return false;" href="javascript:void(0);"'>下一步</button>
+                    </div>
+                </div>
+                
+            </div>
+    </body>
+</html>
